@@ -3,9 +3,10 @@ sudo: false
 node_js:
   - "node"
   - "lts/*"
-  - "4"
-  - "6"
   - "8"
+  - "6"
+  - "4"
+  - "0.12"
 install:
   - npm install -g codecov
   - npm install
