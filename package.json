@@ -1,0 +1,23 @@
+{
+  "name": "codecov-example-node",
+  "version": "0.0.1",
+  "description": "Codecov Example Node",
+  "main": "script.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/jasmine/bin/jasmine.js spec/*.js",
+    "build": "uglifyjs --compress --mangle --comments /^!/ -- lib/script.js > script.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codecov/example-node.git"
+  },
+  "author": "Codecov <hello@codecov.io>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "istanbul": "^0.4.0",
+    "jasmine": "^3.0.0",
+    "uglify-es": "^3.0.0"
+  }
+}
