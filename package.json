@@ -5,6 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "istanbul cover ./node_modules/jasmine/bin/jasmine.js spec/*.js",
+    "report-coverage": "codecov -t 387b5c4d-cd2a-4045-affc-7abe6d117bb8",
     "build": "uglifyjs --compress --mangle --comments /^!/ -- lib/script.js > script.min.js"
   },
   "repository": {
