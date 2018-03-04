@@ -4,8 +4,8 @@
   "description": "Codecov Example Node",
   "main": "script.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/jasmine/bin/jasmine.js spec/*.js",
-    "report-coverage": "codecov -t ${CODECOV_TOKEN}",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly",
+    "report": "codecov -t ${CODECOV_TOKEN}",
     "build": "uglifyjs --compress --mangle --comments /^!/ --output script.min.js -- lib/script.js"
   },
   "repository": {
@@ -17,8 +17,9 @@
   "dependencies": {},
   "devDependencies": {
     "codecov": "^3.0.0",
-    "istanbul": "^0.4.0",
-    "jasmine": "^3.0.0",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
     "uglify-es": "^3.0.0"
   }
 }

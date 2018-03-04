@@ -1,10 +1,11 @@
 var simple = require('../lib/script');
+var expect = require("expect.js");
 
 describe("simple", function(){
   it("should return true", function(){
-    expect(simple.math(1)).toBe(true);
+    expect(simple.math(1)).to.be(true);
   });
   it("should return false", function(){
-    expect(simple.math(0)).toBe(false);
+    expect(simple.math(0)).to.be(false);
   });
 });

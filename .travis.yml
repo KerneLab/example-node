@@ -12,5 +12,5 @@ install:
   - npm install
 script:
   - npm run test
-  - npm run report-coverage
+  - npm run report
   - npm run build
